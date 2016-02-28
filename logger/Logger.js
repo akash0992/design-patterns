@@ -1,11 +1,3 @@
-# design-patterns
-
-## Factory Design Pattern 
-//Implementation of logger module    
-//Factory class  
-//Logger.js  
-
-```js
 "use strict";
 let singleton = Symbol();
 let singletonEnforcer = Symbol();
@@ -14,6 +6,7 @@ class Logger {
     constructor(enforcer) {
         throw "Cannot construct ConsoleLogger";
     }
+
     static getLogger(index) {
         var logger = loggers[index];
         if ("undefined" === typeof logger)
@@ -27,4 +20,3 @@ class Logger {
 }
 Logger.registerLogger(require("./ConsoleLogger").instance);
 module.exports = Logger;
-```

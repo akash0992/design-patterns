@@ -1,0 +1,5 @@
+{
+  "name": "simple-node-logger",
+  "version": "0.0.1",
+  "main": "Logger.js"
+}
